@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+   int n;
+   printf("Name : V.Balaram Krishna\n");
+   printf("Reg No : 192324049\n");
+   printf("\nEnter the size of the array: ");
+   scanf("%d", &n);
+   int a[n];
+   printf("Enter array elements: \n");
+   for(int i=0; i<n; i++)
+   {
+      scanf("%d",&a[i]);
+   }
+   printf("Even numbers in the array are: \n");
+   for(int i=0; i<n; i++)
+   {
+     if(a[i]%2==0)
+     printf("%d ", a[i]);
+   }
+   printf("\nOdd numbers in the array are: \n");
+   for(int i=0; i<n; i++)
+   {
+     if(a[i]%2!=0)
+     printf("%d ", a[i]);
+   }
+
+   return 0;
+}
+
+C:\Users\jahna\OneDrive\Pictures\Screenshots\Screenshot 2023-12-21 121001.png
