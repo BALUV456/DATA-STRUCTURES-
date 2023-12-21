@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main() {
+	int n,i,search;
+	printf("Name : V.Balaram Krishna\n");
+	printf("Reg No:192324049\n");
+	printf("\nEnter the Array size : ");
+	scanf("%d",&n);
+	printf("\nEnter the Elements in the Array :");
+	int a[n];
+	for(i=0;i<n;i++) {
+		scanf("%d",&a[i]);
+	}
+	printf("\nEnter the Number you want to Search : ");
+	scanf("%d",&search);
+	for(i=0;i<n;i++) {
+		if(search==a[i])
+		{
+			printf("\nElement found ");
+			break;
+			}
+	}
+	if(i==n) {
+		printf("\nElement not Found");
+	}
+}
+
+C:\Users\jahna\OneDrive\Pictures\Screenshots\Search\Linear Search\Screenshot 2023-12-20 204034.png
