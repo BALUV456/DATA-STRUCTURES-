@@ -46,6 +46,8 @@ Day 2 - Recursion and Search
 
 2.6 Binary search of array
 
+Day 3 – Singly Linked List
+
 3.1	Implement SLL with following operations
 Insert(Beg,Mid,End)
 Delete(Beg,Mid,End)
