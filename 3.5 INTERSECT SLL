@@ -52,8 +52,6 @@ int main() {
     head2->next->next->next = newNode(6);
     head2->next->next->next->next = newNode(7);
     struct Node* intersection = intersectSLL(head1, head2);
-    printf("\nname:pradeep");
-    printf("\nreg no:192324052");
     printf("\nIntersection: ");
     printSLL(intersection);
     return 0;
