@@ -54,8 +54,7 @@ int main() {
     head->next->next = newNode(3);
     head->next->next->next = newNode(2);
     head->next->next->next->next = newNode(1);
-    printf("\nname:pradeep");
-    printf("\nreg no:192324052");
+
     printf("\nLinked List: ");
     printList(head);
 
