@@ -107,15 +107,15 @@ Middle element:- floor((size_of_stack+1)/2) (1-based indexing) from bottom of 
 
 Day 6
 
-6.1. Write a function that takes a string containing parentheses , square brackets  and curly braces "  ( { [ ] } " and determines if the symbols are balanced.
+6.1 Write a function that takes a string containing parentheses , square brackets  and curly braces "  ( { [ ] } " and determines if the symbols are balanced.
  
-6.2.  Write a function to evaluate a given postfix expression. The expression is "44 2 / 6 -"
+6.2  Write a function to evaluate a given postfix expression. The expression is "44 2 / 6 -"
   
-6.3. Write a function to convert an infix expression to postfix notation. The infix expression is " "(a + b) * c + d "
+6.3 Write a function to convert an infix expression to postfix notation. The infix expression is " "(a + b) * c + d "
 
 Day 7
 
-7.1.  Implement Queue using array with following operations
+7.1  Implement Queue using array with following operations
 Enqueue( )
 Dequeue( )
 isEmpty( )
@@ -124,14 +124,14 @@ Display( )
 front( ) orPeek( )
 rear( )
 
-7.2   .Implement Queue using Linked List with following operations
+7.2   Implement Queue using Linked List with following operations
 Enqueue( )
 Dequeue( )
 Display( )
 Front( )
 Rear( )
 
-7.3.   Implement CircularQueue using array with following operations
+7.3   Implement CircularQueue using array with following operations
 Enqueue( )
 Dequeue( )
 isEmpty( )
@@ -140,23 +140,23 @@ Display( )
 front( ) orPeek( )
 rear( )
 
-7.4   .Implement CircularQueue using Linked List with following operations
+7.4   Implement CircularQueue using Linked List with following operations
 Enqueue( )
 Dequeue( )
 Display( )
 Front( )
 Rear( )
-7.5.   Implement Stack using two queues
+7.5   Implement Stack using two queues
 
-7.6.  Implement Queue using two Stacks
+7.6  Implement Queue using two Stacks
 
 Day 8:
 
-8.1.  Implement Binary tree
+8.1  Implement Binary tree
 
-8.2.  Implement Binary Search Tree and perform Insertion and Deletion
+8.2  Implement Binary Search Tree and perform Insertion and Deletion
 
-8.3.  Create Binary Search Tree with Tree Traversal (Inorder, Preorder, Postorder and Level order)
+8.3  Create Binary Search Tree with Tree Traversal (Inorder, Preorder, Postorder and Level order)
 
 Day 9
 
