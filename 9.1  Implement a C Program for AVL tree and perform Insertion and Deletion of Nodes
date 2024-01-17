@@ -125,6 +125,8 @@ void inorderTraversal(struct Node* root) {
     inorderTraversal(root->right);
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct Node* root = NULL;
     root = insertNode(root, 10);
     root = insertNode(root, 20);
