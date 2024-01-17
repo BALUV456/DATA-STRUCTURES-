@@ -18,6 +18,8 @@ struct Node* createNode(int data) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct Node* root = createNode(1);
     root->left = createNode(2);
     root->right = createNode(3);
