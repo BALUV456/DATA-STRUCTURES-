@@ -56,6 +56,8 @@ void peek() {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     push(10);
     push(20);
     push(30);
