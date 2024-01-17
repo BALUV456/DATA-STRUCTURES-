@@ -35,6 +35,8 @@ void printList(struct Node* head) {
     printf("\n");
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     struct Node* list1 = createNode(1);
     list1->next = createNode(3);
     list1->next->next = createNode(5);
