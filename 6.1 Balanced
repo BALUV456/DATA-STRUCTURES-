@@ -25,7 +25,8 @@ bool areSymbolsBalanced(char symbols[]) {
     return (top == -1);
 }
 int main() {
-	
+	printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     char symbols[MAX_SIZE];
     printf("\nEnter symbols: ");
     fgets(symbols, MAX_SIZE, stdin);
