@@ -41,6 +41,8 @@ void printSLL(struct Node* head) {
     printf("\n");
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     struct Node* head1 = newNode(1);
     head1->next = newNode(2);
     head1->next->next = newNode(3);
