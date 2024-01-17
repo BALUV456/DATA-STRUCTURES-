@@ -25,6 +25,8 @@ void insert(struct TrieNode* root, char* word) {
     currentNode->isEndOfWord = 1;
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct TrieNode* root = createNode();
     insert(root, "hello");
     insert(root, "world");
