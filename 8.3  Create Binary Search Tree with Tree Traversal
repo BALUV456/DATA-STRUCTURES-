@@ -75,6 +75,8 @@ void levelOrderTraversal(struct Node* root) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct Node* root = NULL;
     root = insertNode(root, 50);
     insertNode(root, 30);
