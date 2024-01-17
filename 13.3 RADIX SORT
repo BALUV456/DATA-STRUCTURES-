@@ -34,6 +34,8 @@ void radixSort(int arr[], int n) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     int n;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
