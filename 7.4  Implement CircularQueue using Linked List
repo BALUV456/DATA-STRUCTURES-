@@ -70,6 +70,8 @@ void display(struct CircularQueue* queue) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct CircularQueue* queue = createCircularQueue();
 
     enqueue(queue, 10);
