@@ -113,6 +113,8 @@ void deleteNode(struct Node** root, int data) {
     printf("Deletion not implemented in this example.\n");
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     struct Node* root = NULL;
     insert(&root, 7);
     insert(&root, 3);
