@@ -14,6 +14,8 @@ void bsort(int arr[], int n) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     int n, i;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
