@@ -166,6 +166,8 @@ int findMin(struct Node* head) {
     return min;
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     struct Node* head = NULL;
     insertAtBeginning(&head, 5);
     insertAtBeginning(&head, 10);
