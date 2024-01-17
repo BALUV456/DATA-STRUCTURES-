@@ -52,6 +52,8 @@ void mergeSort(int arr[], int left, int right) {
 }
 
 int main() {
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
     int n;
     printf("Enter the number of elements: ");
     scanf("%d", &n);
