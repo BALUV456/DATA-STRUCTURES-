@@ -52,7 +52,8 @@ void getrear() {
 }
 
 int main() {
-
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     enqueue(10);
     enqueue(20);
     enqueue(30);
