@@ -49,6 +49,8 @@ void printList(struct Node* head) {
     printf("\n");
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     struct Node* head = newNode(1);
     head->next = newNode(2);
     head->next->next = newNode(3);
