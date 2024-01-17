@@ -62,8 +62,8 @@ int getRear() {
     return circularQueue[rear];
 }
 int main() {
-	printf("\nname:pradeep");
-	printf("\nreg no:192324052");
+	printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     enqueue(10);
     enqueue(20);
     enqueue(30);
@@ -74,4 +74,4 @@ int main() {
     display();
     return 0;
 }
-C:\Users\kusha\Pictures\Screenshots\Screenshot 2023-12-29 140019.png
+C:\Users\jahna\OneDrive\Pictures\Screenshots\Screenshot 2024-01-17 185013.png
