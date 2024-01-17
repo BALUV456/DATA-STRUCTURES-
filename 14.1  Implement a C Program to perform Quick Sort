@@ -24,6 +24,8 @@ void quicksort(int number[25],int first,int last){
    }
 }
 int main(){
+printf("Name : V Balaram Krishna\n");
+    printf("Reg No 192324049\n");
    int i, count, number[25];
    printf("How many elements are u going to enter?: ");
    scanf("%d",&count);
