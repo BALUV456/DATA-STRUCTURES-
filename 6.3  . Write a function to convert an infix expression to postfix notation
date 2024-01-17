@@ -43,6 +43,8 @@ void infixToPostfix(char infix[], char postfix[]) {
     postfix[j] = '\0';
 }
 int main() {
+printf("Name : V Balaram Krishna\n");
+printf("Reg No 192324049\n");
     char infix[MAX_SIZE];
     char postfix[MAX_SIZE];
     printf("Enter an infix expression: ");
