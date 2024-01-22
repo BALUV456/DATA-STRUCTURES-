@@ -4,7 +4,7 @@
 
 #define MAX_VERTICES 100
 
-// Structure to represent an edge in the graph
+
 struct Edge {
     int src, dest;
 };
@@ -23,7 +23,6 @@ int minDistance(int dist[], int sptSet[], int numVertices) {
     return min_index;
 }
 
-// Function to print the shortest path from source to target using parent array
 void printPath(int parent[], int j) {
     if (parent[j] == -1)
         return;
