@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// Node structure for the linked list
+
 struct Node {
     int data;
     struct Node* next;
 };
 
-// Stack structure
+
 struct Stack {
     struct Node* top;
 };
 
-// Function to create a new node
+
 struct Node* createNode(int data) {
     struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
     newNode->data = data;
@@ -20,21 +20,19 @@ struct Node* createNode(int data) {
     return newNode;
 }
 
-// Function to initialize a stack
 struct Stack* createStack() {
     struct Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
     stack->top = NULL;
     return stack;
 }
 
-// Function to push a node onto the stack
 void push(struct Stack* stack, int data) {
     struct Node* newNode = createNode(data);
     newNode->next = stack->top;
     stack->top = newNode;
 }
 
-// Function to pop a node from the stack
+
 int pop(struct Stack* stack) {
     if (stack->top == NULL) {
         return -1; // Stack underflow
@@ -46,7 +44,7 @@ int pop(struct Stack* stack) {
     return data;
 }
 
-// Function to perform DFS and topological ordering
+
 void topologicalSortUtil(int v, int visited[], struct Stack* stack, int graph[][100], int numVertices) {
     visited[v] = 1;
 
@@ -59,24 +57,20 @@ void topologicalSortUtil(int v, int visited[], struct Stack* stack, int graph[][
     push(stack, v);
 }
 
-// Function to perform topological sorting
 void topologicalSort(int graph[][100], int numVertices) {
     struct Stack* stack = createStack();
     int visited[100];
 
-    // Initialize visited array
     for (int i = 0; i < numVertices; i++) {
         visited[i] = 0;
     }
 
-    // Call the recursive helper function for each unvisited vertex
     for (int i = 0; i < numVertices; i++) {
         if (!visited[i]) {
             topologicalSortUtil(i, visited, stack, graph, numVertices);
         }
     }
 
-    // Print the topological order
     printf("Topological Order: ");
     while (stack->top != NULL) {
         int vertex = pop(stack);
@@ -84,7 +78,6 @@ void topologicalSort(int graph[][100], int numVertices) {
     }
 }
 
-// Main function
 int main() {
 	printf("Name : V balaram Krishna\n");
 	printf("Reg No : 192324049\n");  
