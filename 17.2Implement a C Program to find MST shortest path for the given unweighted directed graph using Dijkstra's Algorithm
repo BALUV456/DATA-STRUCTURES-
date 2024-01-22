@@ -9,7 +9,7 @@ struct Edge {
     int src, dest;
 };
 
-// Function to find the vertex with the minimum distance value, which is not yet included in the shortest path tree
+
 int minDistance(int dist[], int sptSet[], int numVertices) {
     int min = INT_MAX, min_index;
 
@@ -32,7 +32,6 @@ void printPath(int parent[], int j) {
     printf("-> %d ", j);
 }
 
-// Function to print the shortest path distances and paths from source to all vertices
 void printSolution(int dist[], int parent[], int src, int numVertices) {
     printf("Vertex\tDistance\tPath\n");
     for (int i = 0; i < numVertices; i++) {
@@ -42,31 +41,29 @@ void printSolution(int dist[], int parent[], int src, int numVertices) {
     }
 }
 
-// Function to perform Dijkstra's algorithm to find the shortest paths from a source vertex in an unweighted graph
 void dijkstra(struct Edge edges[], int numVertices, int numEdges, int src) {
-    int dist[MAX_VERTICES];    // The output array dist[i] holds the shortest distance from src to i
-    int sptSet[MAX_VERTICES];  // sptSet[i] will be true if vertex i is included in the shortest path tree or the shortest distance from src to i is finalized
-    int parent[MAX_VERTICES];   // Parent array to store the shortest path tree
-
-    // Initialize all distances as INFINITE and sptSet[] as false
+    int dist[MAX_VERTICES];    
+    int sptSet[MAX_VERTICES];  
+    int parent[MAX_VERTICES];  
+   
     for (int i = 0; i < numVertices; i++) {
         dist[i] = INT_MAX;
         sptSet[i] = 0;
         parent[i] = -1;
     }
 
-    // Distance from source vertex to itself is always 0
+    
     dist[src] = 0;
 
-    // Find shortest path for all vertices
+    
     for (int count = 0; count < numVertices - 1; count++) {
-        // Pick the minimum distance vertex from the set of vertices not yet processed.
+        
         int u = minDistance(dist, sptSet, numVertices);
 
-        // Mark the picked vertex as processed
+        
         sptSet[u] = 1;
 
-        // Update dist value of the adjacent vertices of the picked vertex
+       
         for (int i = 0; i < numEdges; i++) {
             if (edges[i].src == u && !sptSet[edges[i].dest] && dist[u] != INT_MAX && dist[u] + 1 < dist[edges[i].dest]) {
                 dist[edges[i].dest] = dist[u] + 1;
@@ -75,11 +72,11 @@ void dijkstra(struct Edge edges[], int numVertices, int numEdges, int src) {
         }
     }
 
-    // Print the constructed distance array and shortest paths
+   
     printSolution(dist, parent, src, numVertices);
 }
 
-// Main function
+
 int main() {
 		printf("Name : V balaram Krishna\n");
 	printf("Reg No : 192324049\n");  
@@ -102,7 +99,7 @@ int main() {
     printf("Enter the source vertex: ");
     scanf("%d", &src);
 
-    // Call the function to find and print the shortest paths
+   
     dijkstra(edges, numVertices, numEdges, src);
 
     return 0;
