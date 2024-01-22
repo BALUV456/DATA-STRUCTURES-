@@ -4,7 +4,6 @@
 
 #define MAX_VERTICES 100
 
-// Function to find the vertex with the minimum distance value, which is not yet included in the shortest path tree
 int minDistance(int dist[], int sptSet[], int numVertices) {
     int min = INT_MAX, min_index;
 
@@ -18,7 +17,6 @@ int minDistance(int dist[], int sptSet[], int numVertices) {
     return min_index;
 }
 
-// Function to print the shortest path from source to target using parent array
 void printPath(int parent[], int j) {
     if (parent[j] == -1)
         return;
@@ -27,7 +25,6 @@ void printPath(int parent[], int j) {
     printf("-> %d ", j);
 }
 
-// Function to print the shortest path distances and paths from source to all vertices
 void printSolution(int dist[], int parent[], int src, int numVertices) {
     printf("Vertex\tDistance\tPath\n");
     for (int i = 0; i < numVertices; i++) {
@@ -37,31 +34,25 @@ void printSolution(int dist[], int parent[], int src, int numVertices) {
     }
 }
 
-// Function to perform Dijkstra's algorithm to find the shortest paths from a source vertex
 void dijkstra(int graph[MAX_VERTICES][MAX_VERTICES], int numVertices, int src) {
-    int dist[MAX_VERTICES];    // The output array dist[i] holds the shortest distance from src to i
-    int sptSet[MAX_VERTICES];  // sptSet[i] will be true if vertex i is included in the shortest path tree or the shortest distance from src to i is finalized
-    int parent[MAX_VERTICES];   // Parent array to store the shortest path tree
+    int dist[MAX_VERTICES];   
+    int sptSet[MAX_VERTICES];  
+    int parent[MAX_VERTICES];   
 
-    // Initialize all distances as INFINITE and sptSet[] as false
     for (int i = 0; i < numVertices; i++) {
         dist[i] = INT_MAX;
         sptSet[i] = 0;
         parent[i] = -1;
     }
 
-    // Distance from source vertex to itself is always 0
     dist[src] = 0;
 
-    // Find shortest path for all vertices
     for (int count = 0; count < numVertices - 1; count++) {
-        // Pick the minimum distance vertex from the set of vertices not yet processed.
+     
         int u = minDistance(dist, sptSet, numVertices);
 
-        // Mark the picked vertex as processed
         sptSet[u] = 1;
 
-        // Update dist value of the adjacent vertices of the picked vertex
         for (int v = 0; v < numVertices; v++) {
             if (!sptSet[v] && graph[u][v] && dist[u] != INT_MAX && dist[u] + graph[u][v] < dist[v]) {
                 dist[v] = dist[u] + graph[u][v];
@@ -69,12 +60,9 @@ void dijkstra(int graph[MAX_VERTICES][MAX_VERTICES], int numVertices, int src) {
             }
         }
     }
-
-    // Print the constructed distance array and shortest paths
     printSolution(dist, parent, src, numVertices);
 }
 
-// Main function
 int main() {
     int numVertices;
 
@@ -94,7 +82,6 @@ int main() {
     printf("Enter the source vertex: ");
     scanf("%d", &src);
 
-    // Call the function to find and print the shortest paths
     dijkstra(graph, numVertices, src);
 
     return 0;
