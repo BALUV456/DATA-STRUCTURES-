@@ -2,7 +2,7 @@
 
 #define MAX_SIZE 100
 
-// Function to initialize the graph matrix
+
 void initializeGraph(int graph[MAX_SIZE][MAX_SIZE], int size) {
     int i, j;
     for (i = 0; i < size; i++) {
@@ -12,13 +12,11 @@ void initializeGraph(int graph[MAX_SIZE][MAX_SIZE], int size) {
     }
 }
 
-// Function to add an edge between two vertices
 void addEdge(int graph[MAX_SIZE][MAX_SIZE], int u, int v) {
     graph[u][v] = 1;
     graph[v][u] = 1;
 }
 
-// Function to print the graph matrix
 void printGraph(int graph[MAX_SIZE][MAX_SIZE], int size) {
     int i, j;
     for (i = 0; i < size; i++) {
