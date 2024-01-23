@@ -1,4 +1,4 @@
-#include<iostream>
+#include<stdio.h>
 int main() {
 	int mid,left=0,n,i,found=0;
 	printf("Name : V.Balaram Krishna\n");
